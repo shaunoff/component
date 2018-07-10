@@ -1,0 +1,45 @@
+@import "@promoboxx/pbxxfont/dist/index";
+
+@font-face {
+  font-family: "promoboxx-icon";
+  src: url("~@promoboxx/pbxxfont/dist/promoboxx-icon-regular.eot"); /* IE9 */
+  src: url("~@promoboxx/pbxxfont/dist/promoboxx-icon-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("~@promoboxx/pbxxfont/dist/promoboxx-icon-regular.woff") format("woff"), /* chrome, firefox */
+  url("~@promoboxx/pbxxfont/dist/promoboxx-icon-regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("~@promoboxx/pbxxfont/dist/promoboxx-icon-regular.svg#promoboxx-icon regular") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gotham-round";
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Light.eot"); /* IE9 */
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Light.woff") format("woff"), /* chrome, firefox */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Light.svg#promoboxx-icon") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "gotham-round";
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Medium.eot"); /* IE9 */
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Medium.woff") format("woff"), /* chrome, firefox */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Medium.svg#promoboxx-icon") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "gotham-round";
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Bold.eot"); /* IE9 */
+  src: url("~@promoboxx/pbxxfont/dist/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Bold.woff") format("woff"), /* chrome, firefox */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("~@promoboxx/pbxxfont/dist/GothamRounded-Bold.svg#promoboxx-icon") format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: 800;
+}

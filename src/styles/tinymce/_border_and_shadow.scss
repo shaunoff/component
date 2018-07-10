@@ -1,0 +1,54 @@
+.mce-top-part {
+  &:before {
+    border-bottom: 1px solid $input-border-color;
+  }
+}
+
+.mce-toolbar-grp, .mce-edit-area {
+  border: none;
+}
+
+.mce-btn-group:not(:first-child) {
+  border-left: 0px solid black;
+  margin-left: 0px;
+}
+
+.mce-tinymce.mce-panel {
+  .mce-btn {
+    @include border-radius(3px);
+  }
+  @include border-radius(3px);
+  border: 1px solid $input-border-color;
+  @include box-sizing(border-box);
+  &.focus {
+    border: 1px solid get-color(brand-info);
+    .mce-top-part {
+      &:before {
+        border-bottom: 1px solid get-color(brand-info);
+      }
+    }
+  }
+  &.plain_text {
+    border: none;
+    .mce-edit-area {
+      @include border-radius(3px);
+      border: 1px solid $input-border-color !important;
+    }
+    .mce-top-part {
+      &:before {
+        border-bottom: none;
+      }
+    }
+    &.focus {
+      .mce-edit-area {
+        @include border-radius(3px);
+        border: 1px solid get-color(brand-info) !important;
+      }
+      .mce-top-part {
+        &:before {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

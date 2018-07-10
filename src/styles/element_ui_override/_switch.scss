@@ -1,0 +1,96 @@
+$component: switch;
+
+.#{el($component)} {
+  display: inline-block;
+  position: relative;
+  font-size: $switch-font-size;
+  line-height: $switch-height;
+  height: $switch-height;
+  vertical-align: middle;
+  &.#{is(disabled)} {
+    opacity: 0.6;
+    .#{el($component, core)}, .#{el($component, label)} {
+      cursor: not-allowed;
+    }
+  }
+  &.#{is(checked)} {
+    .#{el($component, core)} {
+      border-color: get-color(brand-info);
+      background-color: get-color(brand-info)
+    }
+  }
+  .label-fade-enter, .label-fade-leave-active {
+    opacity: 0;
+  }
+}
+
+.#{el($component, core)}, .#{el($component, label)} {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.#{el($component, label)} {
+  @include transition(.2s);
+  height: $switch-height;
+  font-size: $switch-font-size;
+  color: #303133;
+  &.#{is(active)} {
+    color: get-color(brand-info);
+  }
+  * {
+    line-height: $switch-height;
+    font-size: $switch-font-size;
+    display: inline-block;
+  }
+}
+
+.#{el($component, input)} {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0
+}
+
+.#{el($component, label, left)} {
+  margin-right: $switch-label-margin;
+}
+
+.#{el($component, label, right)} {
+  margin-left: $switch-label-margin;
+}
+
+.#{el($component, core)} {
+  margin: 0;
+  position: relative;
+  width: $switch-width;
+  height: $switch-height;
+  border: 1px solid #dcdfe6;
+  outline: 0;
+  border-radius: 10px;
+  background: #dcdfe6;
+  @include transition(border-color .3s, background-color .3s);
+  .#{el($component, button)} {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    border-radius: 100%;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+  }
+}
+
+.#{el($component, false, wide)} {
+  .#{el($component, label)}.#{el($component, label, left)} span {
+    left: 10px;
+  }
+  .#{el($component, label)}.#{el($component, label, right)} span {
+    right: 10px;
+  }
+}

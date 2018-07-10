@@ -1,0 +1,35 @@
+//switch
+$switch-font-size: 14px;
+$switch-height: 20px;
+$switch-width: 40px;
+$switch-label-margin: 0.5em;
+
+//table
+$table-border-color: get-color(gray-lightest);
+$table-text-color: get-color(black);
+$table-header-background: get-color(gray-light);
+$table-footer-background: get-color(gray-light);
+$sort-button-color: get-color(gray-light);
+$sort-button-color-active: get-color(brand-primary);
+
+//input
+$input-border-color: get-color(gray-light);
+$input-fill: get-color(white);
+$input-border-radius: 0.25em;
+$input-color: get-color(gray-darkest);
+$input-placeholder-color: get-color(gray-light);
+$input-hover-border-color: get-color(gray-light);
+$input-focus-border-color: get-color(brand-info);
+$input-disabled-border-color: get-color(gray-lightest);
+$input-disabled-fill: get-color(gray-lightest);
+$input-disabled-placeholder-color: get-color(gray-light);
+$input-disabled-color: get-color(gray-light);
+
+//pagination
+$pagination-color: get-color(gray-darkest);
+$pagination-hover-color: get-color(brand-info);
+$pagination-disabled-color: get-color(gray-light);
+$pagination-disabled-fill: get-color(gray-light);
+$pagination-fill: get-color(gray-lightest);
+$pagination-border-color: transparent;
+$pagination-disabled-color: get-color(gray-lightest)

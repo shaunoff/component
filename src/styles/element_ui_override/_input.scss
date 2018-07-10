@@ -1,0 +1,104 @@
+$component: input;
+
+.#{el($component)} {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  &.#{is(active)} {
+    .#{el($component, inner)}, .#{el(textarea, inner)} {
+      &:focus {
+        border-color: $input-focus-border-color;
+      }
+    }
+  }
+  &.#{is(disabled)} {
+    .#{el($component, inner)} {
+      background-color: $input-disabled-fill;
+      border-color: $input-disabled-border-color;
+      color: $input-disabled-color;
+      cursor: not-allowed;
+      @include input-placeholder {
+        color: $input-disabled-placeholder-color;
+      }
+    }
+  }
+}
+
+.#{el($component, inner)}, .#{el(textarea, inner)} {
+  @include appearance(none);
+  background-color: $input-fill;
+  background-image: none;
+  @include border-radius($input-border-radius);
+  border: 1px solid $input-border-color;
+  @include box-sizing(border-box);
+  color: $input-color;
+  line-height: 2em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  @include transition(border-color .2s cubic-bezier(.645, .045, .355, 1));
+  width: 100%;
+  @include input-placeholder {
+    color: $input-placeholder-color;
+  }
+  &:hover {
+    border-color: $input-hover-border-color;
+  }
+  &:focus {
+    border-color: $input-focus-border-color;
+  }
+}
+
+.form_item {
+  &.#{is(error)} {
+    .#{el($component, inner)}, .#{el($component, inner)}:focus {
+      border-color: get-color(brand-danger);
+    }
+  }
+}
+
+$component: input-group;
+
+.#{el($component)} {
+  line-height: normal;
+  display: inline-table;
+  width: 100%;
+  border-collapse: separate;
+  > .#{el($component, inner)} {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+.#{el($component, append)}, .#{el($component, prepend)} {
+    background-color: get-color(gray-lightest);
+    color: get-color(gray);
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    border: 1px solid $input-border-color;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 1px;
+    white-space: nowrap
+}
+
+.#{el($component, prepend)} {
+    border-right: 0
+}
+
+.#{el($component, append)} {
+    border-left: 0
+}
+
+
+.#{el($component, false, prepend)} .#{el(input, inner)},
+.#{el($component, append)} {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.#{el($component, false, append)} .#{el(input, inner)},
+.#{el($component, prepend)} {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}

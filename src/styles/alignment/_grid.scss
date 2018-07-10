@@ -1,0 +1,37 @@
+$screen-xs-min: 480px;
+$screen-xl-min: 1600px;
+
+@for $i from(1 + 1) through $grid-columns {
+  .col-tn-#{$i} {
+    position: relative;
+    min-height: 1px;
+    padding-left:  ceil(($grid-gutter-width / 2));
+    padding-right: floor(($grid-gutter-width / 2));
+  }
+}
+
+@include make-grid(tn);
+@media (min-width: $screen-xs-min) {
+  @include make-grid(xs);
+}
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg);
+}
+@media (min-width: $screen-xl-min) {
+  @include make-grid(xl);
+}
+
+.pbxx-card {
+  @extend .col-tn-12;
+  @extend .col-xs-6;
+  @extend .col-sm-4;
+  @extend .col-md-4;
+  @extend .col-lg-3;
+  @extend .col-xl-2;
+}

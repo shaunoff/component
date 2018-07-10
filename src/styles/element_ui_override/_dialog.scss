@@ -1,0 +1,22 @@
+$component: dialog;
+
+.#{el(dialog)} {
+    position: relative;
+    margin: 0 auto 50px;
+    border-radius: 2px;
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, .3));
+    @include box-sizing(border-box);
+    width: 50%;
+}
+
+.#{el(dialog, body)} {
+    padding: 30px 20px;
+    color: get-color(gray-darkest);
+}
+
+.#{el(dialog, title)} {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: get-color(gray-darkest);
+}

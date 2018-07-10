@@ -1,0 +1,15 @@
+{
+  "fonts":[
+    {
+      "name": "Gotham Rounded",
+      "family": "gotham-round",
+      "weights": [200, 500, 800],
+      "abbreviation": "gr"
+    }, {
+      "name": "Work Sans",
+      "family": "Work Sans",
+      "weights": [300, 500],
+      "abbreviation": "ws"
+    }
+  ]
+}

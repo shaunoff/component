@@ -1,0 +1,55 @@
+.responsive_typography {
+  $width-without-gutter: strip-unit(($screen-xs-min - $grid-gutter-width * $max-tn-column-count) * 100 / $screen-xs-min);
+  font-size: ($width-without-gutter / ($character-count * $max-tn-column-count)) + 0vw;
+  h1 {
+    font-size: 2.6em;
+  }
+  h2 {
+    font-size: 2.15em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.05em;
+  }
+  h6 {
+    font-size: 0.85em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media (min-width: $screen-xs-min) {
+  $width-without-gutter: strip-unit(($screen-sm-min - $grid-gutter-width * $max-xs-column-count) * 100 / $screen-sm-min);
+  .responsive_typography {
+    font-size: ($width-without-gutter / ($character-count * $max-xs-column-count)) + 0vw;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  $width-without-gutter: strip-unit(($screen-md-min - $grid-gutter-width * $max-sm-column-count) * 100 / $screen-md-min);
+  .responsive_typography {
+    font-size: ($width-without-gutter / ($character-count * $max-sm-column-count)) + 0vw;
+  }
+}
+@media (min-width: $screen-md-min) {
+  $width-without-gutter: strip-unit(($screen-lg-min - $grid-gutter-width * $max-md-column-count) * 100 / $screen-lg-min);
+  .responsive_typography {
+    font-size: ($width-without-gutter / ($character-count * $max-md-column-count)) + 0vw;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  $width-without-gutter: strip-unit(($screen-xl-min - $grid-gutter-width * $max-lg-column-count) * 100 / $screen-xl-min);
+  .responsive_typography {
+    font-size: ($width-without-gutter / ($character-count * $max-lg-column-count)) + 0vw;
+  }
+}
+@media (min-width: $screen-xl-min) {
+  $width-without-gutter: strip-unit((2000px - $grid-gutter-width * $max-xl-column-count) * 100 / 2000px);
+  .responsive_typography {
+    font-size: ($width-without-gutter / ($character-count * $max-xl-column-count)) + 0vw;
+  }
+}

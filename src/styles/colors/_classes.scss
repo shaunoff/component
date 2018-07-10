@@ -1,0 +1,20 @@
+@each $swatch_group in $swatch_groups {
+  $colors: map-get($swatch_group, "colors");
+
+  @each $color in $colors {
+    $name: map-get($color, "name");
+    $hex: map-get($color, "hex");
+
+    .#{$name}-background-color {
+      background-color: $hex;
+    }
+
+    .#{$name}-font-color {
+      color: $hex;
+    }
+
+    .#{$name}-border-color {
+      border-color: $hex;
+    }
+  }
+}

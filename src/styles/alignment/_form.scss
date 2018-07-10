@@ -1,0 +1,19 @@
+.form_group {
+  .form_item {
+    margin-bottom: 0.5em;
+    label {
+      margin-bottom: 7px;
+    }
+    .form_error {
+      min-height: 1em;
+      font-size: 0.9em;
+      visibility: hidden;
+      color: get-color(brand-danger);
+    }
+    &.is-error {
+      .form_error {
+        visibility: visible;
+      }
+    }
+  }
+}

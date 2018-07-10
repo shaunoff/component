@@ -1,0 +1,31 @@
+$component: tabs;
+
+.#{el($component, item)} {
+  padding: 0 20px;
+  height: 40px;
+  @include box-sizing(border-box);
+  line-height: 40px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: get-color(gray-darkest);
+  position: relative;
+  &.#{is(active)} {
+    color: get-color(brand-info);
+  }
+  &:hover {
+    color: get-color(brand-info);
+  }
+}
+
+.#{el($component, active-bar)} {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: get-color(brand-info);
+  z-index: 1;
+  @include transition(transform(.3s cubic-bezier(.645, .045, .355, 1)));
+  list-style: none;
+}

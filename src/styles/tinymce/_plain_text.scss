@@ -1,0 +1,10 @@
+.plain_text {
+  .mce-flow-layout {
+    text-align: right;
+    .mce-flow-layout-item {
+      &.mce-last {
+        margin-right: 0;
+      }
+    }
+  }
+}

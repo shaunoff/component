@@ -1,0 +1,248 @@
+{
+  "swatch_groups": [
+    {
+      "name": "pink swatches",
+      "colors": [
+        {
+          "name": "pink-light",
+          "hex": "#FFDECE"
+        },
+        {
+          "name": "pink",
+          "hex": "#F09AB0"
+        }
+      ]
+    },
+    {
+      "name": "magenta swatches",
+      "colors": [
+        {
+          "name": "magenta-light",
+          "hex": "#F06EB0"
+        },
+        {
+          "name": "magenta",
+          "hex": "#F03DB0"
+        }
+      ]
+    },
+    {
+      "name": "red swatches",
+      "colors": [
+        {
+          "name": "red-light",
+          "hex": "#EE5044"
+        },
+        {
+          "name": "red",
+          "hex": "#EB011E"
+        },
+        {
+          "name": "red-dark",
+          "hex": "#B9011E"
+        }
+      ]
+    },
+    {
+      "name": "orange swatches",
+      "colors": [
+        {
+          "name": "orange-yellow",
+          "hex": "#FF8017"
+        },
+        {
+          "name": "orange",
+          "hex": "#FF5721"
+        },
+        {
+          "name": "orange-red",
+          "hex": "#FF4121"
+        }
+      ]
+    },
+    {
+      "name": "blue swatches",
+      "colors": [
+        {
+          "name": "blue-brand",
+          "hex": "#26D3EF"
+        },
+        {
+          "name": "blue-brand-darker",
+          "hex": "#2196f3"
+        },
+        {
+          "name": "blue-light",
+          "hex": "#00ADD1"
+        },
+        {
+          "name": "blue",
+          "hex": "#3473A9"
+        },
+        {
+          "name": "blue-dark",
+          "hex": "#1B2378"
+        },
+        {
+          "name": "blue-desaturated",
+          "hex": "#4251AF"
+        }
+      ]
+    },
+    {
+      "name": "green swatches",
+      "colors": [
+        {
+          "name": "green-light",
+          "hex": "#00CA6C"
+        },
+        {
+          "name": "green",
+          "hex": "#00AF6C"
+        },
+        {
+          "name": "green-dark",
+          "hex": "#00996C"
+        }
+      ]
+    },
+    {
+      "name": "teal swatches",
+      "colors": [
+        {
+          "name": "teal-green",
+          "hex": "#00A494"
+        },
+        {
+          "name": "teal",
+          "hex": "#009EA4"
+        },
+        {
+          "name": "teal-dark",
+          "hex": "#00808A"
+        }
+      ]
+    },
+    {
+      "name": "purple swatches",
+      "colors": [
+        {
+          "name": "purple-light",
+          "hex": "#B367B0"
+        },
+        {
+          "name": "purple",
+          "hex": "#9C26B0"
+        },
+        {
+          "name": "purple-blue",
+          "hex": "#7626B0"
+        },
+        {
+          "name": "purple-dark",
+          "hex": "#39163D"
+        },
+        {
+          "name": "purple-darkest",
+          "hex": "#280A28"
+        }
+      ]
+    },
+    {
+      "name": "gray swatches",
+      "colors": [
+        {
+          "name": "white",
+          "hex": "#FFFFFF"
+        },
+        {
+          "name": "gray-lightest",
+          "hex": "#F4F4F4"
+        },
+        {
+          "name": "gray-light",
+          "hex": "#BDBDBD"
+        },
+        {
+          "name": "gray",
+          "hex": "#969696"
+        },
+        {
+          "name": "gray-dark",
+          "hex": "#646464"
+        },
+        {
+          "name": "gray-darkest",
+          "hex": "#323232"
+        },
+        {
+          "name": "black",
+          "hex": "#000000"
+        }
+      ]
+    },
+    {
+      "name": "brown swatches",
+      "colors": [
+        {
+          "name": "brown-lightest",
+          "hex": "#A18780"
+        },
+        {
+          "name": "brown-light",
+          "hex": "#8C6E63"
+        },
+        {
+          "name": "brown",
+          "hex": "#5C4038"
+        }
+      ]
+    },
+    {
+      "name": "info swatches",
+      "colors": [
+        {
+          "name": "brand-primary",
+          "hex": "#26D3EF"
+        },
+        {
+          "name": "brand-success",
+          "hex": "#00AF6C"
+        },
+        {
+          "name": "brand-info",
+          "hex": "#00ADD1"
+        },
+        {
+          "name": "brand-warning",
+          "hex": "#FFC208"
+        },
+        {
+          "name": "brand-danger",
+          "hex": "#EE5044"
+        }
+      ]
+    },
+    {
+      "name": "social swatches",
+      "colors": [
+        {
+          "name": "facebook-color",
+          "hex": "#3B5998"
+        },
+        {
+          "name": "twitter-color",
+          "hex": "#00aced"
+        },
+        {
+          "name": "youtube-color",
+          "hex": "#ff0000"
+        },
+        {
+          "name": "vimeo-color",
+          "hex": "#45bbff"
+        }
+      ]
+    }
+  ]
+}

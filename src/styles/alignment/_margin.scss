@@ -1,0 +1,16 @@
+$margin_orientation: (
+  t: margin-top,
+  l: margin-left,
+  b: margin-bottom,
+  r: margin-right
+);
+
+@each $label, $rule in $margin_orientation {
+  @for $i from 0 through 9 {
+    @for $j from 0 through 9 {
+      .m-#{$label}-#{$i}-#{$j} {
+        #{$rule}: $i + ($j / 10) + 0em;
+      }
+    }
+  }
+}

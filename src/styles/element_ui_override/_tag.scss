@@ -1,0 +1,8 @@
+$component: tag;
+
+.#{el($component, false, info)} {
+  color: get-color(gray-darkest);
+  .#{el($component, info)} {
+    color: get-color(gray-darkest);
+  }
+}

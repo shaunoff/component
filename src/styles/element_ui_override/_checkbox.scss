@@ -1,0 +1,42 @@
+$component: checkbox;
+
+.#{el($component)} {
+  color: get-color(gray-darkest);
+  cursor: pointer;
+  @include user-select(none);
+}
+
+.#{el($component, inner)} {
+  display: inline-block;
+  position: relative;
+  border: 1px solid get-color(gray-light);
+  @include box-sizing(border-box);
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  z-index: 1;
+  @include transition(border-color .25s cubic-bezier(.71,-.46,.29,1.46),
+                background-color .25s cubic-bezier(.71,-.46,.29,1.46));
+  @include border-radius(0.25em);
+  &:hover {
+    border-color: get-color(brand-info);
+  }
+}
+
+.#{el($component, label)} {
+  vertical-align: middle;
+}
+
+.#{el($component, input)} {
+  &.#{is(focus)} {
+    .#{el($component, inner)} {
+      border-color: get-color(brand-info);
+    }
+  }
+  &.#{is(checked)} {
+    .#{el($component, inner)} {
+      background-color: get-color(brand-info);
+      border-color: get-color(brand-info);
+    }
+  }
+}

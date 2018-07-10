@@ -1,0 +1,20 @@
+@each $font in $fonts {
+  $abbreviation: map-get($font, "abbreviation");
+  $family: map-get($font, "family");
+  .#{$abbreviation} {
+    font-family: $family;
+    font-weight: 500;
+  }
+
+  $weights: map-get($font, "weights");
+  @each $weight in $weights {
+    .#{$abbreviation}.w-#{$weight} {
+      font-weight: $weight;
+    }
+    .#{$abbreviation} {
+      .w-#{$weight} {
+        font-weight: $weight;
+      }
+    }
+  }
+}

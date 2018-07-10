@@ -1,0 +1,16 @@
+$swatches: ();
+
+@each $swatch_group in $swatch_groups {
+  $colors: map-get($swatch_group, "colors");
+
+  @each $color in $colors {
+    $name: map-get($color, "name");
+    $hex: map-get($color, "hex");
+    $map: ($name: $hex);
+    $swatches: map-merge($swatches, $map);
+  }
+}
+
+@function get-color($name) {
+  @return map-get($swatches, $name)
+}

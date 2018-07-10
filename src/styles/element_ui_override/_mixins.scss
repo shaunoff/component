@@ -1,0 +1,21 @@
+@function el($name, $extensions...) {
+  @if length($extensions) == 0 {
+    @return el-#{$name};
+  } @else {
+    $sub: nth($extensions, 1);
+    @if length($extensions) == 1 {
+      @return el-#{$name}__#{$sub};
+    } @else {
+      $modifier: nth($extensions, 2);
+      @if $sub == false {
+        @return el-#{$name}--#{$modifier};
+      } @else {
+        @return el-#{$name}__#{$sub}--#{$modifier};
+      }
+    }
+  }
+}
+
+@function is($state) {
+  @return is-#{$state};
+}

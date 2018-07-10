@@ -1,0 +1,34 @@
+$component: radio;
+
+.#{el($component)} {
+  color: get-color(gray-darkest);
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: 0;
+}
+
+.#{el($component, label)} {
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.#{el($component, input)} {
+  &.#{is(checked)} {
+    .#{el($component, inner)} {
+      border-color: get-color(brand-info);
+      background: get-color(brand-info);
+    }
+    & + .#{el($component, label)} {
+      color: get-color(gray-darkest);
+    }
+  }
+}
+
+.#{el($component, inner)} {
+  &:hover {
+    border-color: get-color(brand-info);
+  }
+}

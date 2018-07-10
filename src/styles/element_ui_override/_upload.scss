@@ -1,0 +1,35 @@
+$component: upload;
+
+.#{el($component)} {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.#{el($component, input)} {
+  display: none;
+  &[type="file"] {
+    display: none;
+  }
+}
+
+.#{el(upload-dragger)} {
+  background-color: #fff;
+  border: 2px dashed get-color(gray-lightest);
+  border-radius: 6px;
+  @include box-sizing(border-box);
+  width: 360px;
+  height: 180px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    border-color: get-color(brand-info);
+  }
+  .#{el($component, text)} {
+    em {
+      color: get-color(brand-info);
+      font-style: normal;
+    }
+  }
+}

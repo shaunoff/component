@@ -1,0 +1,51 @@
+$component: menu;
+
+.#{el($component, false, horizontal)} {
+  .#{el(submenu)} {
+    float: left;
+    position: relative;
+    > .#{el($component)} {
+      position: absolute;
+      top: 65px;
+      left: 0;
+      padding: 1em 0;
+      z-index: 100;
+      min-width: 100%;
+      @include border-radius(0.25em);
+      @include box-shadow(0px 2px 4px 0px rgba(0,0,0,0.12), 0px 0px 6px 0px rgba(0,0,0,0.04));
+    }
+    .#{el(submenu, title)} {
+      height: 60px;
+      line-height: 60px;
+      color: get-color(gray);
+      border-bottom: 2px solid transparent;
+    }
+    .#{el(menu-item)} {
+      float: none;
+      height: 36px;
+      line-height: 36px;
+      padding: 0 1em;
+    }
+    &.#{is(active)} {
+      .#{el(submenu, title)} {
+        color: get-color(gray-darkest);
+        border-bottom: 2px solid get-color(brand-info);
+      }
+    }
+  }
+  > .#{el(menu-item)} {
+    border-bottom: 2px solid transparent;
+    &.#{is(active)} {
+      border-bottom: 2px solid get-color(brand-info);
+    }
+  }
+  .#{el(menu-item)} {
+    color: get-color(gray);
+    &.#{is(active)} {
+      color: get-color(gray-darkest);
+      .#{el(submenu, title)} {
+        border-bottom: 2px solid get-color(brand-info);
+      }
+    }
+  }
+}

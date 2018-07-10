@@ -1,0 +1,124 @@
+$component: button;
+
+.#{el($component)} {
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  background: white;
+  border: 1px solid get-color(gray-light);
+  color: get-color(gray-darkest);
+  font-weight: 500;
+  @include appearance(none);
+  text-align: center;
+  @include box-sizing(border-box);
+  margin: 0;
+  @include user-select(none);
+  @include transition(all .1s);
+  padding: 0.5em 1em;
+  @include border-radius(0.25em);
+  &:hover, &:focus {
+    background-color: get-color(gray-lightest);
+  }
+  &.#{is(disabled)} {
+    cursor: not-allowed;
+    background-color: get-color(gray-lightest);
+    border: 1px solid get-color(gray-lightest);
+    color: get-color(gray-light);
+  }
+}
+
+.#{el($component, false, text)} {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: get-color(brand-info);
+  &:hover, &:focus {
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+}
+
+.#{el($component, false, primary)} {
+  background-color: get-color(brand-primary);
+  border: 1px solid get-color(brand-primary);
+  color: white;
+  &:hover, &:focus {
+    background-color: darken(get-color(brand-primary), 5%);
+    border: 1px solid darken(get-color(brand-primary), 5%);
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: lighten(desaturate(get-color(brand-primary), 50%), 25%);
+    border: 1px solid lighten(desaturate(get-color(brand-primary), 50%), 25%);
+  }
+}
+
+.#{el($component, false, info)} {
+  background-color: get-color(brand-info);
+  border: 1px solid get-color(brand-info);
+  color: white;
+  &:hover, &:focus {
+    background-color: darken(get-color(brand-info), 5%);
+    border: 1px solid darken(get-color(brand-info), 5%);
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: lighten(desaturate(get-color(brand-info), 50%), 25%);
+    border: 1px solid lighten(desaturate(get-color(brand-info), 50%), 25%);
+  }
+}
+
+.#{el($component, false, warning)} {
+  background-color: get-color(brand-warning);
+  border: 1px solid get-color(brand-warning);
+  color: white;
+  &:hover, &:focus {
+    background-color: darken(get-color(brand-warning), 5%);
+    border: 1px solid darken(get-color(brand-warning), 5%);
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: lighten(desaturate(get-color(brand-warning), 50%), 25%);
+    border: 1px solid lighten(desaturate(get-color(brand-warning), 50%), 25%);
+  }
+}
+
+.#{el($component, false, success)} {
+  background-color: get-color(brand-success);
+  border: 1px solid get-color(brand-success);
+  color: white;
+  &:hover, &:focus {
+    background-color: darken(get-color(brand-success), 5%);
+    border: 1px solid darken(get-color(brand-success), 5%);
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: lighten(desaturate(get-color(brand-success), 50%), 25%);
+    border: 1px solid lighten(desaturate(get-color(brand-success), 50%), 25%);
+  }
+}
+
+.#{el($component, false, danger)} {
+  background-color: get-color(brand-danger);
+  border: 1px solid get-color(brand-danger);
+  color: white;
+  &:hover, &:focus {
+    background-color: darken(get-color(brand-danger), 5%);
+    border: 1px solid darken(get-color(brand-danger), 5%);
+  }
+  &.#{is(disabled)} {
+    color: white;
+    background-color: lighten(desaturate(get-color(brand-danger), 50%), 25%);
+    border: 1px solid lighten(desaturate(get-color(brand-danger), 50%), 25%);
+  }
+}
+
+.#{el(input)} {
+  .#{el($component)} {
+    padding: 1em 1em;
+  }
+}

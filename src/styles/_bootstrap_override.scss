@@ -1,0 +1,20 @@
+$gray-base: get-color(black);
+$gray-darker: get-color(gray-darkest);
+$gray-dark: get-color(gray-dark);
+$gray: get-color(gray);
+$gray-light: get-color(gray-light);
+$gray-lighter: get-color(gray-lightest);
+
+$brand-primary: get-color(brand-primary);
+$brand-success: get-color(brand-success);
+$brand-info: get-color(brand-info);
+$brand-warning: get-color(brand-warning);
+$brand-danger: get-color(brand-danger);
+
+$link-hover-color: get-color(blue-desaturated);
+
+$font-family-sans-serif: 'gotham-round';
+
+body {
+  color: get-color(gray-darkest);
+}

@@ -1,0 +1,35 @@
+// this file manifests all styling scss, it does not include the json maps that is also included inside of index.scss
+
+// compass mixins
+@import "compass-mixins/lib/compass";
+
+// helpers
+@import "helpers";
+
+// fonts and glyphs
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,500');
+@import 'fonts';
+
+// colors
+@import "colors";
+
+// normalize
+@import "normalize-scss/sass/normalize";
+@import "browser_override";
+
+// bootstrap
+@import "bootstrap_override";
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// aligment
+@import "alignment";
+
+// responsive
+@import "responsive";
+
+// element ui
+@import "element_ui_override";
+
+// tinymce
+@import "tinymce";

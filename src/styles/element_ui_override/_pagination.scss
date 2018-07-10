@@ -1,0 +1,90 @@
+$component: pagination;
+
+.#{el($component)} {
+  white-space: nowrap;
+  padding: 0.5em 1em;
+  color: $pagination-color;
+  button {
+    border: none;
+    padding: 0 0.5em;
+    background: transparent;
+    &:hover {
+      color: $pagination-hover-color;
+    }
+    &.disabled {
+      color: $pagination-disabled-color;
+      background-color: $pagination-disabled-fill;
+      cursor: not-allowed;
+    }
+  }
+  .btn-prev, .btn-next {
+    background: center center no-repeat;
+    background-size: 16px;
+    border: 0px solid $pagination-border-color;
+    @include border-radius(0.25em);
+    cursor: pointer;
+    margin: 0;
+    color: $pagination-color;
+
+    .el-icon {
+      line-height: 2em;
+      display: block;
+    }
+  }
+  &.#{is(background)} {
+    button {
+      background: $pagination-fill;
+      &.disabled {
+        color: $pagination-disabled-color;
+        background-color: $pagination-disabled-fill;
+      }
+    }
+    .#{el(pager)} {
+      li {
+        padding: 0;
+        margin-left: 0.5em;
+        background: $pagination-fill;
+        @include border-radius(0.25em);
+        &:last-child {
+          margin-right: 0.5em;
+        }
+        &.active {
+          background-color: $pagination-hover-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+$component: pager;
+
+.#{el($component)} {
+  @include user-select(none);
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  // font-size: 0;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0 0.5em;
+    border: 1px solid pagination-border-color;
+    border-right: 0;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+    @include box-sizing(border-box);
+    text-align: center;
+    line-height: 2em;
+    min-width: 3em;
+    margin: 0;
+    &:hover {
+      color: $pagination-hover-color;
+    }
+    &.active {
+      color: $pagination-hover-color;
+      cursor: default;
+    }
+  }
+}

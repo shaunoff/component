@@ -1,0 +1,180 @@
+$component: cascader;
+
+.#{el($component)} {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.#{el($component)} .el-input,
+.#{el($component)} .el-input__inner {
+    cursor: pointer;
+    height: 40px;
+}
+
+.#{el($component)} .el-input__icon {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.#{el($component)} .el-icon-arrow-down {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    font-size: 14px;
+}
+
+.#{el($component)} .el-icon-arrow-down.is-reverse {
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.#{el($component)} .el-icon-circle-close {
+    z-index: 2;
+    -webkit-transition: color .2s cubic-bezier(.645, .045, .355, 1);
+    transition: color .2s cubic-bezier(.645, .045, .355, 1);
+}
+
+.#{el($component)} .el-icon-circle-close:hover {
+    color: #909399;
+}
+
+.#{el($component)}__clearIcon {
+    z-index: 2;
+    position: relative;
+}
+
+.#{el($component)}__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 25px 0 15px;
+    color: #606266;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    font-size: inherit;
+}
+
+.#{el($component)}__label span {
+    color: #000;
+}
+
+.#{el($component)}--medium {
+    font-size: 14px;
+    line-height: 36px
+}
+
+.#{el($component)}--small {
+    font-size: 13px;
+    line-height: 32px
+}
+
+.#{el($component)}--mini {
+    font-size: 12px;
+    line-height: 28px
+}
+
+.#{el($component)}.is-disabled .#{el($component)}__label {
+    z-index: 2;
+    color: #c0c4cc;
+}
+
+.#{el($component)}-menus {
+    white-space: nowrap;
+    background: #fff;
+    position: absolute;
+    margin: 5px 0;
+    z-index: 2;
+    border: 1px solid #e4e7ed;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.#{el($component)}-menus .popper__arrow {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
+}
+
+.#{el($component)}-menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 204px;
+    overflow: auto;
+    border-right: solid 1px #e4e7ed;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 6px 0;
+    min-width: 160px;
+}
+
+.#{el($component)}-menu:last-child {
+    border-right: 0;
+}
+
+.#{el($component)}-menu__item {
+    padding: 8px 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #606266;
+    height: 34px;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: 0;
+}
+
+.#{el($component)}-menu__item--extensible:after {
+    font-family: promoboxx-icon;
+    content: "\f2f6";
+    color: #bfcbd9;
+    position: absolute;
+    right: 15px;
+}
+
+.#{el($component)}-menu__item.is-disabled {
+    color: #c0c4cc;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.#{el($component)}-menu__item.is-active {
+    color: #409EFF;
+}
+
+.#{el($component)}-menu__item:focus:not(:active),
+.#{el($component)}-menu__item:hover {
+    background-color: #f5f7fa;
+}
+
+.#{el($component)}-menu__item.selected {
+    color: #fff;
+    background-color: #f5f7fa;
+}
+
+.#{el($component)}-menu__item__keyword {
+    font-weight: 700;
+}
+
+.#{el($component)}-menu--flexible {
+    height: auto;
+    max-height: 180px;
+    overflow: auto;
+}
+
+.#{el($component)}-menu--flexible .#{el($component)}-menu__item {
+    overflow: visible;
+}

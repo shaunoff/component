@@ -1,0 +1,23 @@
+.widget-12 {
+  width: 100%;
+}
+
+.widget-6 {
+  width: 50%;
+}
+
+.grid.widgets {
+  width: 100%;
+  .grid_row {
+    display: table;
+    width: 100%;
+    > [class^="widget-"],
+    > [class*="widget-"] {
+      position: relative;
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+}
+
+
